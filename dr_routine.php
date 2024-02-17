@@ -1,22 +1,24 @@
 <?php
-function getDoctorLocation($day) {
-    switch($day) {
-        case "Monday":
-            return "Nairobi";
-        case "Tuesday":
-            return "Nakuru";
-        case "Wednesday":
-            return "Kericho";
-        case "Thursday":
-            return "Kisumu";
-        case "Friday":
-            return "Narok";
-        default:
-            return "The doctor does not visit any hospital today.";
+function getDoctorLocation($day)
+{
+    if ($day == "Monday") {
+        return "Nairobi";
+    } else if ($day == "Tuesday") {
+        return "Nakuru";
+    } else if ($day == "Wednesday") {
+        return "Kericho";
+    } else if ($day == "Thursday") {
+        return "Kisumu";
+    } else if ($day == "Friday") {
+        return "Narok";
+    } else if ($day == "Saturday" || $day == "Sunday") {
+        return "The doctor is off duty at Home.";
+    } else {
+        return "The doctor is admitted in hospital.";
     }
 }
 
-if(isset($_GET['day'])) {
+if (isset($_GET['day'])) {
     echo getDoctorLocation($_GET['day']);
 }
 ?>
