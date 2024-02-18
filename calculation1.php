@@ -6,7 +6,7 @@
     <title>Lesson One</title>
 </head>
 <body>
-    <h1>Lesson One</h1>
+    <h1>Calculation of X and Y</h1>
     <p>My first PHP page.</p>
     <?php
     // This is a single-line comment and my first PHP script

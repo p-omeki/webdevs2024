@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch($operation) {
         case 'add':
             $result = $num1 + $num2;
-            echo "The sum of Num1 and Num2 is: " . $result . "<br>";
+            echo "The sum of $num1 and $num2 is: " . $result . "<br>";
             break;
         case 'subtract':
             $result = $num1 - $num2;
@@ -30,4 +30,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             break;
     }
 }
-?>
