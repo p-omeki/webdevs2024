@@ -8,11 +8,13 @@
     <h2>Name Printing Form</h2>
 
     <form method="post" action="">
-        Enter your name: <input type="text" name="name">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name">
         <br><br>
-        How many times do you want your name printed? <input type="number" name="count" min="1">
+        <label for="times">How many times do you want your name printed?</label>
+        <input type="number" name="count" min="1">
         <br><br>
-        <input type="submit" name="submit" value="Print">
+        <input type="submit" name="submit" value="Print" button>
     </form>
 
     <?php

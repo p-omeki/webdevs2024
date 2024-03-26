@@ -22,3 +22,4 @@ if (isset($_GET['day'])) {
     echo getDoctorLocation($_GET['day']);
 }
 ?>
+```
